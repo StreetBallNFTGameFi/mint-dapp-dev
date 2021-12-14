@@ -1,0 +1,77 @@
+.nft-steps-section{
+    background-position: center;
+    background-size: cover;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        .boxes-container{
+            width: 47%;
+
+            span {
+                font-size: 30px;
+                color: yellow;
+                font-weight: bolder;
+            }
+            &>*{
+
+                &:last-child{
+                    margin: 0;
+                }
+            }
+
+        }
+
+        .image-container{
+            width: 47%;
+            position: relative;
+            margin-right: 20px;
+
+            .image-inner{
+                padding: 3px;
+                position: absolute;
+                width: 100%;
+                height:500px;;
+                top: 0;
+                left: 0;
+
+                &:first-child{
+                    position: relative;
+                }
+
+                &:nth-child(2){
+                    top: 10px;
+                    left: 10px;
+                }
+                &:nth-child(1){
+                    top: 109px;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .image-inner{
+        &:nth-child(1){
+            top: 0px !important;
+            left: 20px;
+        }
+    }
+
+    .nft-steps-section{
+        .container{
+            flex-direction: column;
+            .boxes-container{
+                width: 100%;
+                order: 1;
+            }
+            .image-container{
+                width: calc(100% - 20px);
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.text-box{
+    margin-top: 40px !important; 
+    display: flex;
+    height: 500px;
+    width: calc(100% - 10px);
+    display: flex;
+    position: relative;
+    text-align: justify;
+
+    *{
+        color: rgb(124, 124, 124);
+        font-size: 15px;
+        text-align: left;
+        line-height: 1.6;
+    }
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100%;
+    }  
+  }

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+.MuiButtonBase-root{
+  margin-top: 30px !important; 
+  -webkit-appearance: none !important;
+  background: yellow !important;
+  border: none !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  color: rgb(31, 31, 31) !important;
+  cursor: pointer !important;
+  font: 1.3em montserrat-regular, sans-serif !important;
+  height: 4rem !important;
+  letter-spacing: .05em !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  width: 15rem !important;
+
+
+  &:hover{
+    animation-name: gradient !important;
+    -webkit-animation-name: gradient !important;
+    animation-duration: 2s !important;
+    -webkit-animation-duration: 2s !important;
+    animation-iteration-count: 1 !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-fill-mode: forwards !important;
+    -webkit-animation-fill-mode: forwards !important;
+  }
+}
+
+@keyframes gradient{
+  0%{
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 100%;
+  }  
+}
+
+  
+
+
